@@ -15,3 +15,38 @@ let streets = L.tileLayer('https://api.mapbox.com/styles/v1/mapbox/streets-v11/t
 
 // Then we add our 'graymap' tile layer to the map.
 streets.addTo(map);
+
+
+// Multiple markers:
+
+
+  // Loop through the cities array and create one marker for each city.
+cities.forEach(function(city) {
+    console.log(city)
+});
+
+//Loop through the cities array and create one marker for each city.
+cities.forEach(function(city) {
+   console.log(city)
+   L.marker(city.location).addTo(map);
+ });
+
+
+// Get data from cities.js
+let cityData = cities;
+
+// Loop through the cities array and create one marker for each city.
+cityData.forEach(function(city) {
+    console.log(city)
+    L.marker(city.location).addTo(map);
+});
+
+// Loop through the cities array and create one marker for each city.
+cityData.forEach(function(city) {
+    console.log(city)
+    L.circleMarker(city.location, {
+        radius: city.population/100000
+    })
+    .bindPopup("<h2>" + city.city + ", " + city.state + "</h2> <hr> <h3>Population " + city.population.toLocaleString() + "</h3>")
+  .addTo(map);
+});
