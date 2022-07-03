@@ -4,7 +4,7 @@ BootCamp  Week 13. GeoJSON, Javascript
 # Overview
 This Challenge is  about mapping earthquakes data from diferent sources, using  JavaScript and  D3 library, Leaflet library, MapBox API.
 
-The project switches between 3 different types of maps: Street, Satellite and Navigation Night, also showing the record of earthquakes in the last 7 days, identifying them as follows:
+The project is in the Earthquakes_Challenge directory, and switches between 3 different types of maps: Street, Satellite and Navigation Night, also showing the record of earthquakes in the last 7 days, identifying them as follows:
 
   1. With a circle of size and color proportional to the magnitude of the earthquake, as well as a pop-up with its magnitude and location. 
   2. A map of the tectonic layers around the world, which allows us to identify the ones that have registered the most seismic activity.
